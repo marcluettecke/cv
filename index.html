@@ -49,13 +49,18 @@
 							</a>
 						</li>
 						<li class="nav__item">
-							<a href="#certificates" class="nav__link">
-								<i class="bx bx-award"></i> Certificates
+							<a href="#achievements" class="nav__link">
+								<i class="bx bx-award"></i> Achievements
 							</a>
 						</li>
 						<li class="nav__item">
 							<a href="#references" class="nav__link">
 								<i class="bx bx-link-external"></i> References
+							</a>
+						</li>
+            <li class="nav__item">
+							<a href="#volunteering" class="nav__link">
+								<i class="bx bx-calendar-heart"></i> Volunteering
 							</a>
 						</li>
 					</ul>
@@ -66,26 +71,26 @@
 		</header>
 		<main class="l-main bd-container">
       <!-- printable in pdf -->
-      <div class="resume">
+      <div class="resume" id="area-cv">
         <div class="resume__left">
           <!-- HOME -->
           <section class="home" id="home">
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
                 <div class="home__img__container">
-                  <img src="./assets/img/headshot_bw.jpg" alt="" class="home__img">
+                  <img src="./assets/img/headshot_resume.jpg" alt="" class="home__img">
                 </div>
                 <h1 class="home__title">LÜTTECKE <b>MARC</b></h1>
-                <h3 class="home__profession">Data Scientist / Web developer</h3>
+                <h3 class="home__profession">Web Developer</h3>
               
                 <!-- Button to download your CV saved in PDF folder - for mobile only -->
                 <div>
-                  <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-mobile">Download</a>
+                  <a download="" href="assets/pdf/MarcLuettecke_CV.pdf" class="home__button-mobile">Download</a>
                 </div>
               </div>
               <div class="home_-address bd-grid">
                 <span class="home__information">
-                  <i class="bx bx-map home__icon"></i> Neuenkamp 36 Hamm - Germany
+                  <i class="bx bx-map home__icon"></i> Neuenkamp 36 Hamm
                 </span>
                 <span class="home__information">
                   <i class="bx bx-envelope home__icon"></i> marc.luettecke1@gmail.com
@@ -95,23 +100,262 @@
                 </span>
               </div>
             </div>
+            <!-- Theme change button -->
+            <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+            
+            <!-- button download pdf -->
+            <id class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></id>
           </section>
-          <!-- Theme change button -->
-          <!-- button download pdf -->
+
           <!-- SOCIAL -->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
+            <div class="social__container bd-grid">
+              <a href="https://www.linkedin.com/in/marc-luettecke/" target="_blank" class="social__link">
+                <i class="bx bxl-linkedin-square social__icon"></i>@marc-luettecke
+              </a>
+              <a href="https://github.com/marcluettecke" target="_blank" class="social__link">
+                <i class="bx bxl-github social__icon"></i>@marcluettecke
+              </a>
+              <a href="https://twitter.com/mluettecke1" target="_blank" class="social__link">
+                <i class="bx bxl-twitter social__icon"></i>@mluettecke1
+              </a>
+            </div>
+          </section>
+
           <!-- PROFILE -->
+
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+
+            <p class="profile__description">
+              I bring a divers background from various industries, with project experience in Data Science, Consulting, and Web Development to help you reach your goals.
+            </p>
+          </section>
           <!-- EDUCATION -->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education__container bd-grid">
+              
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+                  <div class="education__data bd-grid">
+                    <h3 class="education__title">MSc DATA SCIENCE <span class="education__grade">&#8709; 1.4</span></h3>
+                    <span class="education__studies">University of Konstanz</span>
+                    <span class="education__year">2018 - 2021</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+                  <div class="education__data bd-grid">
+                    <h3 class="education__title">MSc FINANCE <span class="education__grade">&#8709; 1.6</span></h3>
+                    <span class="education__studies">University of Texas ast Austin</span>
+                    <span class="education__year">2014 - 2016</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                    <!-- <span class="education__line"></span> -->
+                  </div>
+                  <div class="education__data bd-grid">
+                    <h3 class="education__title">BSc FINANCE <span class="education__grade">&#8709; 1.2</span></h3>
+                    <span class="education__studies">Loyola University New Orleans</span>
+                    <span class="education__year">2009 - 2013</span>
+                  </div>
+              </div>
+            </div>
+          </section>
           <!-- SKILLS -->
-          <div>
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>HTML5
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>CSS3 / SASS
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Javascript
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Angular
+                </li>
+              </ul>
+
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span>React
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>SQL / NoSQL
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Firebase
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span>Python
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
         <div class="resume__right">
           <!-- EXPERIENCE -->
-          <!-- CERTIFICATES -->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">CFO / Co-Founder</h3>
+                  <span class="experience__company">From 2020 to 2021 | Subsequent GmbH</span>
+                  <p class="experience__description">Leading developer of web platform as well as responsible for all business decisions including risk assessment, budgeting, financial modelling and customer prospecting.</p>
+                </div>
+              </div>
+              
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Assistant Manager</h3>
+                  <span class="experience__company">From 2016 to 2018 | KPMG</span>
+                  <p class="experience__description">Senior consultant for regulatory questions of compliance, risk evaluation and legal standard interpretation for financial service providers.</p>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Research Assistant</h3>
+                  <span class="experience__company">From 2014 to 2020 | University of Texas / Konstanz</span>
+                  <p class="experience__description">Scientific researcher for a wide range of problems, including natural language processing, generative network development, financial risk evaluation, and corporate ethics quantification.</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <!-- ACHIVEMENTS -->
+          <section class="achievements section" id="achievements">
+            <h2 class="section-title">Achievements</h2>
+
+            <div class="achievements__container bd-grid">
+              <div class="achievement__content">
+                <h3 class="achievement__title">Full Ph.D. scholarship and fellowship (2014)</h3>
+                <p class="achievement__description">Recruited by McCombs School of Business with a full scholarship (free tuition) and employment as researcher during five year PhD studies</p>
+              </div>
+              
+              <div class="achievement__content">
+                <h3 class="achievement__title">Best Graduating Finance Student (2013)</h3>
+                <p class="achievement__description">Received graduation honors for academic achievements within the College of Business</p>
+              </div>
+
+              <div class="achievement__content">
+                <h3 class="achievement__title">Full Athletic Scholarship (2009 - 2013)</h3>
+                <p class="achievement__description">Played for Loyola University's college basketball teams as a scholarship player and as team captain for 2.5 years</p>
+              </div>
+
+            </div>
+          </section>
           <!-- REFERENCES -->
-          <!-- LANGUAGES -->
+          <section class="references section" id="references">
+            <h2 class="section-title">References</h2>
+
+            <div class="references__container bd-grid">
+              
+              
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">Professor | TU Zurich</span>
+                <h3 class="references__title">Dr. Karsten Donnay</h3>
+                <ul class="references_contact">
+                  <li>Phone: 999-777-666</li>
+                  <li>Email: user_email.com</li>
+                </ul>
+              </div>
+              
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">Senior Manager | KPMG</span>
+                <h3 class="references__title">Mr. Christoph Binder</h3>
+                <ul class="references_contact">
+                  <li>Phone: 999-777-666</li>
+                  <li>Email: user_email.com</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- VOLUNTEERING -->
+          <section class="volunteering section" id="volunteering">
+            <h2 class="section-title">Volunteering</h2>
+
+            <div class="volunteering__container bd-grid">
+              <div class="volunteering__content">
+                <h3 class="volunteering__title">CorrelAid (2019 - present)</h3>
+                <p class="volunteering__description">Leading small teams of Developers and Scientist to provide #data4Good solutions to NGOs. Past roles included project lead and web development responsibilities</p>
+              </div>
+              
+            <!-- <div class="volunteering__container bd-grid">
+              <div class="volunteering__content">
+                <h3 class="volunteering__title">CollegeHouses Board Member (2014 - 2016)</h3>
+                <p class="volunteering__description">Participated as active board member, inhabitant, and officer in multi-million dollar NGO to provide affordable housing in the Austin urban area</p>
+              </div>          
+             </div> -->
+          </section>
           <!-- INTERESTS -->
+          <section class="interests section">
+            <h2 class="section-title">Interests</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-dumbbell interests__icon"></i><span class="interests__name">Fitness</span>
+              </div>
+              
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i><span class="interests__name">Music</span>
+              </div>
+              
+              <div class="interests__content">
+                <i class="bx bx-book interests__icon"></i><span class="interests__name">Reading</span>
+              </div>
+              
+              <div class="interests__content">
+                <i class="bx bx-wine interests__icon"></i><span class="interests__name">Socializing</span>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>
+<a href="#" class="scrolltop" id="scroll-top">
+  <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+</a>
+    <!-- HTML2PDF -->
+    <script src="./assets/js/html2pdf.bundle.min.js"></script>
+
+    <!-- MAIN JS -->
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>
