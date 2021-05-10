@@ -64,7 +64,7 @@ const darkTheme = 'dark-theme';
 const iconTheme = 'bx-sun';
 
 // Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme');
+let selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
 
 // We obtain the current theme that the interface has by validating the dark-theme class
@@ -85,6 +85,7 @@ themeButton.addEventListener('click', () => {
 	themeButton.classList.toggle(iconTheme);
 	// We save the theme and the current icon that the user chose
 	localStorage.setItem('selected-theme', getCurrentTheme());
+	selectedTheme = localStorage.getItem('selected-theme');
 	localStorage.setItem('selected-icon', getCurrentIcon());
 });
 
@@ -125,3 +126,11 @@ resumeButton.addEventListener('click', () => {
 		removeScaling();
 	}, 5000);
 });
+
+// download right file in mobile
+const downloadButtonMobile = document.getElementById('download-button-mobile');
+function assignHrefDownload() {
+	selectedTheme === 'dark'
+		? downloadButtonMobile.setAttribute('href', 'assets/pdf/MarcLuettecke_CV_dark.pdf')
+		: downloadButtonMobile.setAttribute('href', 'assets/pdf/MarcLuettecke_CV_light.pdf');
+}
