@@ -87,6 +87,8 @@ themeButton.addEventListener('click', () => {
 	localStorage.setItem('selected-theme', getCurrentTheme());
 	selectedTheme = localStorage.getItem('selected-theme');
 	localStorage.setItem('selected-icon', getCurrentIcon());
+	// change profile picture
+	toggleProfilePic();
 });
 
 // reduce size and print on a4 sheet
@@ -133,4 +135,11 @@ function assignHrefDownload() {
 	selectedTheme === 'dark'
 		? downloadButtonMobile.setAttribute('href', 'assets/pdf/MarcLuettecke_CV_dark.pdf')
 		: downloadButtonMobile.setAttribute('href', 'assets/pdf/MarcLuettecke_CV_light.pdf');
+}
+
+const profilePicture = document.getElementById('profile_img');
+function toggleProfilePic() {
+	selectedTheme === 'light'
+		? profilePicture.setAttribute('src', './assets/img/headshot_light.jpg')
+		: profilePicture.setAttribute('src', './assets/img/headshot_dark.png');
 }
