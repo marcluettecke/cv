@@ -75,6 +75,10 @@ const getCurrentIcon = () => (themeButton.classList.contains(iconTheme) ? 'bx-mo
 if (selectedTheme) {
 	// If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
 	document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+	const profilePicture = document.getElementById('profile_img');
+	getCurrentTheme() === 'light'
+		? profilePicture.setAttribute('src', './assets/img/headshot_light.jpg')
+		: profilePicture.setAttribute('src', './assets/img/headshot_dark.png');
 	themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
 }
 
@@ -139,7 +143,7 @@ function assignHrefDownload() {
 
 const profilePicture = document.getElementById('profile_img');
 function toggleProfilePic() {
-	selectedTheme === 'light'
+	getCurrentTheme() === 'light'
 		? profilePicture.setAttribute('src', './assets/img/headshot_light.jpg')
 		: profilePicture.setAttribute('src', './assets/img/headshot_dark.png');
 }
