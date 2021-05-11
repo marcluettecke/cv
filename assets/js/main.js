@@ -77,7 +77,7 @@ if (selectedTheme) {
 	document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
 	const profilePicture = document.getElementById('profile_img');
 	getCurrentTheme() === 'light'
-		? profilePicture.setAttribute('src', './assets/img/headshot_light.jpg')
+		? profilePicture.setAttribute('src', './assets/img/headshot_light.png')
 		: profilePicture.setAttribute('src', './assets/img/headshot_dark.png');
 	themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
 }
@@ -144,6 +144,6 @@ function assignHrefDownload() {
 const profilePicture = document.getElementById('profile_img');
 function toggleProfilePic() {
 	getCurrentTheme() === 'light'
-		? profilePicture.setAttribute('src', './assets/img/headshot_light.jpg')
+		? profilePicture.setAttribute('src', './assets/img/headshot_light.png')
 		: profilePicture.setAttribute('src', './assets/img/headshot_dark.png');
 }
