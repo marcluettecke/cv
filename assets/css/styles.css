@@ -346,6 +346,10 @@ body.scale-cv {
 	align-items: center;
 	font-size: var(--small-font-size);
 }
+.home__information__link,
+.references__information__link {
+	color: inherit;
+}
 
 .home__icon {
 	font-size: 1.2rem;
