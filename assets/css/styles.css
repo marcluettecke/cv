@@ -122,11 +122,7 @@ body.scale-cv {
 }
 
 .scale-cv .section {
-	padding: 0.74rem 0 0.8rem;
-}
-
-.scale-cv .section-title {
-	margin-bottom: 0.73rem;
+	padding: 0.5rem 0 0.8rem;
 }
 
 .scale-cv .resume__left,
@@ -196,6 +192,14 @@ body.scale-cv {
 	column-gap: 2.5rem;
 }
 
+.scale-cv .home__container {
+	gap: 0.5rem;
+}
+
+.scale-cv .section-title {
+	padding-bottom: 0.4rem;
+}
+
 /* CLASS CSS */
 
 .section {
@@ -221,7 +225,7 @@ body.scale-cv {
 
 .bd-grid {
 	display: grid;
-	gap: 1.5rem;
+	gap: 1rem;
 }
 
 .l-header {
@@ -587,6 +591,7 @@ body.scale-cv {
 	.section-title,
 	.profile__description {
 		text-align: initial;
+		padding-bottom: 1rem;
 	}
 
 	.home__container {
