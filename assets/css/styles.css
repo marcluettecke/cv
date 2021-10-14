@@ -37,7 +37,7 @@
 }
 
 /* BASE */
-*, :: before, ::after {
+*, ::before, ::after {
 	box-sizing: border-box;
 }
 
@@ -122,7 +122,7 @@ body.scale-cv {
 }
 
 .scale-cv .section {
-	padding: 0.5rem 0 0.8rem;
+	padding: 0.4rem 0 0.8rem;
 }
 
 .scale-cv .resume__left,
@@ -481,6 +481,11 @@ body.scale-cv {
 .volunteering__title {
 	font-size: var(--h3-font-size);
 	margin-bottom: var(--mb-1);
+}
+
+.volunteering__title a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* REFERENCES */
