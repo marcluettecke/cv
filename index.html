@@ -94,26 +94,29 @@
               <div class="home_-address bd-grid">
                 <span class="home__information">
                   <a href="http://maps.google.com/?q=Aegidiustrasse 13 50937 Cologne" class="home__information__link">
-                    <i class="bx bx-map home__icon"></i> Ägidiusstraße 13 Köln
+                    <span class="iconify home__icon" data-icon="ant-design:home-filled"></span></i> Ägidiusstraße 13 Köln
                   </a>
                 </span>
                 <span class="home__information">
                   <a href="mailto:marc.luettecke1@gmail.com" class="home__information__link">
-                    <i class="bx bx-envelope home__icon"></i> marc.luettecke1@gmail.com
+                    <span class="iconify home__icon" data-icon="clarity:email-solid"></span> marc.luettecke1@gmail.com
                   </a>
                 </span>
                 <span class="home__information">
                   <a href="tel:+4917621883495" class="home__information__link">
-                    <i class="bx bx-phone home__icon"></i> (+49) 176 21883495
+                    <span class="iconify home__icon" data-icon="ant-design:phone-filled"></span> (+49) 176 21883495
                   </a>
-                    </a>
                 </span>
               </div>
             </div>
               <!-- Theme change button -->
-            <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+<!--              <span class="iconify bx bx-moon change-theme" data-icon="bi:moon" id="theme-button"></span>-->
+<!--            <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>-->
               <!-- button download pdf -->
-            <id class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></id>
+<!--              <span class="bx bx-download generate-pdf iconify" data-icon="ant-design:download-outlined" id="resume-button"></span>-->
+            <button class="generate-pdf" title="Generate PDF" id="resume-button">
+                <span class="iconify" data-icon="ant-design:download-outlined"></span>
+            </button>
           </section>
 
           <!-- SOCIAL -->
@@ -121,16 +124,16 @@
             <h2 class="section-title">SOCIAL</h2>
             <div class="social__container bd-grid">
               <a href="https://portfoliomarcluettecke.netlify.app/" target="_blank" class="social__link">
-                <i class="bx bx-laptop social__icon"></i>Portfolio
+                <span class="iconify social__icon" data-icon="whh:website"></span>Portfolio
               </a>
               <a href="https://www.linkedin.com/in/marc-luettecke/" target="_blank" class="social__link">
-                <i class="bx bxl-linkedin-square social__icon"></i>@marc-luettecke
+                <span class="iconify social__icon" data-icon="cib:linkedin"></span>@marc-luettecke
               </a>
               <a href="https://github.com/marcluettecke" target="_blank" class="social__link">
-                <i class="bx bxl-github social__icon"></i>@marcluettecke
+                <span class="iconify social__icon" data-icon="akar-icons:github-fill"></span>@marcluettecke
               </a>
               <a href="https://twitter.com/mluettecke1" target="_blank" class="social__link">
-                <i class="bx bxl-twitter social__icon"></i>@mluettecke1
+                <span class="iconify social__icon" data-icon="ant-design:twitter-outlined"></span>@mluettecke1
               </a>
             </div>
           </section>
@@ -348,7 +351,7 @@
                 <h3 class="volunteering__title"><a href="https://correlaid.org/en/about/">CorrelAid (2019 - present)</a> </h3>
                 <p class="volunteering__description">Leading small teams of Developers and Scientist to provide #data4Good NGO solutions. Projects include project lead and web development roles</p>
               </div>
-
+            </div>
           </section>
           <!-- INTERESTS -->
           <section class="interests section">
@@ -356,19 +359,19 @@
 
             <div class="interests__container bd-grid">
               <div class="interests__content">
-                <i class="bx bx-dumbbell interests__icon"></i><span class="interests__name">CrossFit</span>
+                <span class="iconify interests__icon" data-icon="icon-park-outline:dumbbell"></span><span class="interests__name">CrossFit</span>
               </div>
 
               <div class="interests__content">
-                <i class="bx bx-headphone interests__icon"></i><span class="interests__name">Music | Rap</span>
+                <span class="iconify interests__icon" data-icon="bx:bx-headphone"></span><span class="interests__name">Music | Rap</span>
               </div>
 
               <div class="interests__content">
-                <i class="bx bx-book interests__icon"></i><span class="interests__name">Reading</span>
+                <span class="iconify interests__icon" data-icon="akar-icons:book"></span><span class="interests__name">Reading</span>
               </div>
 
               <div class="interests__content">
-                <i class="bx bx-wine interests__icon"></i><span class="interests__name">Socializing</span>
+                <span class="iconify interests__icon" data-icon="bx:bxs-wine"></span><span class="interests__name">Socializing</span>
               </div>
             </div>
           </section>
@@ -380,6 +383,7 @@
 </a>
         <!-- HTML2PDF -->
     <script src="./assets/js/html2pdf.bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
         <!-- MAIN JS -->
 		<script src="./assets/js/main.js"></script>

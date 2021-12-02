@@ -356,7 +356,7 @@ body.scale-cv {
 }
 
 .home__icon {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin-right: 0.25rem;
 }
 
@@ -591,6 +591,7 @@ body.scale-cv {
 
 	.generate-pdf {
 		display: inline-block;
+    border: none;
 	}
 
 	.section-title,
